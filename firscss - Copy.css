@@ -1,0 +1,37 @@
+.container {
+    display: grid;
+    /* you can use the function repeat(number of times you want to repeat, what you want to repeat eg repeat(12,1fr) vh means view port hieght wwhich is the height of your screen. min height allows you to scroll gap property*/
+    grid-template-columns: repeat(12, 1fr);
+    min-height: 100vh;
+    grid-template-rows: 90px auto 200px;
+    gap: 9px;
+}
+
+nav {
+    background-color: gold;
+    /*where to start and where to eend*/
+    grid-column-start: 1;
+    grid-column-end: 13;
+
+}
+
+main {
+    background-color: navy;
+    /*where to start and where to eend*/
+    grid-column-start: 1;
+    grid-column-end: 9;
+}
+
+aside {
+    background-color: aqua;
+    grid-column-start: 9;
+    grid-column-end: 13;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+footer {
+    background-color: blue;
+    grid-column-start: 1;
+    grid-column-end: 9;
+}
